@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonia Sound Inventory</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="logo.png" alt="Harmonia Sound Logo" class="logo">
+    
+    <div class="sidebar">
+        <h2>Harmonia Sound</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Stock</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <h1>Harmonia Sound Inventory System</h1>
+        <div class="stats">
+            <div class="box white">
+                <h2>PIANO</h2>
+                <p>Yamaha, Roland, Korg, Kawai</p>
+            </div>
+            <div class="box navy">
+                <h2>GUITAR</h2>
+                <p>Yamaha, Martin, Taylor</p>
+            </div>
+            <div class="box white">
+                <h2>KEYBOARD</h2>
+                <p>Logitech, Rexus, Fortex</p>
+            </div>
+            <div class="box navy">
+                <h2>DRUM</h2>
+                <p>Yamaha, Tama, Pearl, Ludwig</p>
+            </div>
+        </div>
+        
+        <div id="inventory-form">
+            <input type="text" id="product-name" placeholder="Instrument Name">
+            <input type="number" id="product-quantity" placeholder="Quantity">
+            <input type="number" id="product-price" placeholder="Price">
+            <button onclick="addProduct()">Add Instrument</button>
+        </div>
+        
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Instrument</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="inventory-table-body"></tbody>
+        </table>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
